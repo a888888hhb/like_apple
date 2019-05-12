@@ -1,0 +1,26 @@
+.sm_hidden{
+    display: none !important;
+}
+.xs_hidden{
+    margin: 0 auto;
+    text-align: center;
+    height:100%;
+    width: 90vw;
+    max-width: 1000px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.xs_hidden li{
+    flex: 1;
+}
+.xs_hidden li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.xs_hidden li a:hover{
+    color: #b7b7b7;
+    
+}

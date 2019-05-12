@@ -1,0 +1,28 @@
+.xs_hidden{
+  display: none !important;
+}
+.sm_hidden{
+    height: 100%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+}
+.sm_hidden li{
+    flex: 1;
+}
+.sm_hidden li a:hover{
+    color: #b7b7b7;
+}
+.sm_hidden li:first-child{
+    text-align: left;
+    margin-left: 20px;
+}
+.sm_hidden li:last-child{
+    text-align: right;
+    margin-right: 20px;
+}
+
+#menu:active{
+    color: rebeccapurple !important;
+}
