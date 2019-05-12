@@ -3,24 +3,35 @@
     margin: 0;
     font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
+a{
+    text-decoration: none !important;
+}
+ul{
+    list-style: none !important;
+}
 
 .icon {
     width: 1em; height: 1em;
     vertical-align: -0.15em;
     fill: currentColor;
     overflow: hidden;
+}
+.icon_nomral:hover{
+    color: #b7b7b7;
+}
+.icon_nomral{
     color:#fff;
     font-size:22px;
 }
-.icon:hover{
-    color: #b7b7b7;
-}
-
 .nav{
     width: 100vw;
     height: 44px;
     background-color: #313131;
     text-align: center;
     
+}
+
+#checkboxMenu{
+    display: none;
 }
 

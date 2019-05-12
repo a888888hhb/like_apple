@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,83 +9,123 @@
     <link media="(min-width:768px)" rel="stylesheet" href="css/desktop.css">
     <link media="(max-width:768px)" rel="stylesheet" href="css/mobile.css">
     <script src="js/symbol.js"></script>
+    <script src="js/main.js"></script>
     <title>Apple</title>
 </head>
+
 <body>
     <div class="header">
         <div class="nav">
             <ul class="xs_hidden">
                 <li class="logo">
                     <a href="#">
-                        <svg class="icon" aria-hidden="true">
+                        <svg class="icon icon_nomral" aria-hidden="true">
                             <use xlink:href="#icon-IOS"></use>
                         </svg>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                       Mac 
+                        Mac
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                       ipad 
+                        iPad
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                       iphone 
+                        iPhone
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                       Watch 
+                        Watch
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                       Music 
+                        Music
                     </a>
                 </li>
                 <li class="logo">
                     <a href="#">
-                        <svg class="icon" aria-hidden="true">
+                        <svg class="icon icon_nomral" aria-hidden="true">
                             <use xlink:href="#icon-ios-search"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="logo">
                     <a href="#">
-                        <svg class="icon" aria-hidden="true">
+                        <svg class="icon icon_nomral" aria-hidden="true">
                             <use xlink:href="#icon-bag"></use>
                         </svg>
                     </a>
                 </li>
             </ul>
-            <ul class="sm_hidden">
-                <li class="logo">
-                    <a href="#">
-                        <svg class="icon" aria-hidden="true" id="menu">
-                            <use xlink:href="#icon-ios-menu"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="logo">
-                    <a href="#">
-                        <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-IOS"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="logo">
-                    <a href="#">
-                        <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-bag"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+
+            <input type="checkbox" id="checkboxMenu">
+            <div class="sm_hidden">
+                <ul class="mobileNav">
+                    <li class="logo">
+                        <label for="checkboxMenu">
+                            <svg class="icon icon_nomral" aria-hidden="true" id="menu">
+                                <use xlink:href="#icon-ios-menu"></use>
+                            </svg>
+                        </label>
+                    </li>
+                    <li class="logo">
+                        <a href="#">
+                            <svg class="icon icon_nomral" aria-hidden="true">
+                                <use xlink:href="#icon-IOS"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="logo">
+                        <a href="#" class="shop_bag">
+                            <svg class="icon icon_nomral" aria-hidden="true">
+                                <use xlink:href="#icon-bag"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="container">
+                    <div class="search">
+                        <div class="svg_box">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ios-search"></use>
+                            </svg>
+                        </div>
+                        <input type="text" placeholder="搜索 apple.com">
+                    </div>
+                    <div class="dividing_line"></div>
+                    <ul class="link_list">
+                        <li>
+                            <a href="#">Mac</a>
+                        </li>
+                        <li>
+                            <a href="#">iPad</a>
+                        </li>
+                        <li>
+                            <a href="#">iPhone</a>
+                        </li>
+                        <li>
+                            <a href="#">Watch</a>
+                        </li>
+                        <li>
+                            <a href="#">Music</a>
+                        </li>
+                        <li>
+                            <a href="#">技术支持</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
         </div>
     </div>
 </body>
+
 </html>
