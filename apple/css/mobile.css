@@ -31,7 +31,7 @@
 
 /* 搜索框 */
 .container{
-    display: none; 
+    opacity: 0;
     width: 100vw;
 }
 .container .search{
@@ -104,11 +104,11 @@
     cursor: pointer;
 }
 
-#checkboxMenu{
-    display: none;
-}
 /* 隐藏菜单按钮 */
 #checkboxMenu:checked ~ .sm_hidden #menu{
+    display: none;
+}
+#checkboxMenu:checked #checkboxClosed:checked{
     display: none;
 }
 /* 显示关闭按钮 */
@@ -127,8 +127,36 @@
     opacity:0;
 }
 #checkboxMenu:checked ~ .sm_hidden .container{
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+
+#checkboxClosed:checked ~ .sm_hidden{
+    transition: height .5s cubic-bezier(0.04, 0.04, 0.12, 0.96),background-color .5s ease-in;
+    height: 44px;
+    background-color: #282828;
+}
+
+
+#checkboxClosed:checked ~ .sm_hidden .container{
+    transition: opacity 0.5s ease-out;
+    opacity: 0;
+}
+#checkboxClosed:checked ~ .sm_hidden .shop_bag{
+    transition: opacity 0.5s ease-in;
+    opacity:1;
+}
+/* 显示菜单按钮 */
+#checkboxClosed:checked ~ .sm_hidden #menu{
     display: block;
 }
+/* 隐藏关闭按钮 */
+#checkboxClosed:checked ~ .sm_hidden #closed{
+    animation: display_none .5s linear;
+    display: none;
+}
+
 
 
 
@@ -152,14 +180,12 @@
         border-bottom: 1px solid #282828;
     }
 }
-@keyframes shrink{
+@keyframes display_none{
     from{
-        height: 100vh;
-        background-color: #000;
+        height: 44px;
     }
     to{
-        height: 44px;
-        background-color: #282828;
+        height: 0;
     }
 }
 /* 动画 end*/

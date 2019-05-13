@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/common.css">
     <link media="(min-width:768px)" rel="stylesheet" href="css/desktop.css">
-    <link media="(max-width:768px)" rel="stylesheet" href="css/mobile.css">
+    <link media="(max-width:767px)" rel="stylesheet" href="css/mobile.css">
     <script src="js/symbol.js"></script>
     <script src="js/main.js"></script>
     <title>Apple</title>
@@ -64,8 +64,8 @@
                     </a>
                 </li>
             </ul>
-
-            <input type="checkbox" id="checkboxMenu">
+            <input type="radio" id="checkboxMenu" name="menu">
+            <input type="radio" id="checkboxClosed" name="menu">
             <div class="sm_hidden">
                 <ul class="mobileNav">
                     <li class="logo">
@@ -73,6 +73,8 @@
                             <svg class="icon icon_nomral" aria-hidden="true" id="menu">
                                 <use xlink:href="#icon-ios-menu"></use>
                             </svg>
+                        </label>
+                        <label for="checkboxClosed">
                             <svg class="icon icon_nomral" aria-hidden="true" id="closed">
                                 <use xlink:href="#icon-closed"></use>
                             </svg>

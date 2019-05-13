@@ -31,7 +31,8 @@ ul{
     
 }
 
-#checkboxMenu{
+#checkboxMenu,
+#checkboxClosed{
     display: none;
 }
 
