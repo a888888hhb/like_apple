@@ -32,7 +32,9 @@ ul{
 }
 
 #checkboxMenu,
-#checkboxClosed{
+#checkboxClosed,
+#searchInput,
+#searchCancel{
     display: none;
 }
 

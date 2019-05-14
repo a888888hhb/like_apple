@@ -66,6 +66,8 @@
             </ul>
             <input type="radio" id="checkboxMenu" name="menu">
             <input type="radio" id="checkboxClosed" name="menu">
+            <input type="radio" id="searchInput" name="search">
+            <input type="radio" id="searchCancel" name="search">
             <div class="sm_hidden">
                 <ul class="mobileNav">
                     <li class="logo">
@@ -102,7 +104,11 @@
                                 <use xlink:href="#icon-ios-search"></use>
                             </svg>
                         </div>
-                        <input type="text" placeholder="搜索 apple.com">
+                        <label for="searchInput" id="searchLable">
+                            <div></div>
+                            <input type="text" placeholder="搜索 apple.com" id="search">
+                        </label>
+                        <label for="searchCancel" class="cancel">取消</label>
                     </div>
                     <div class="dividing_line"></div>
                     <ul class="link_list">

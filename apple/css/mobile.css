@@ -37,13 +37,15 @@
 .container .search{
     width: 90vw;
     margin: 0 4vw 0 5vw;
-    background-color: #282828;
     display: flex;
     align-items: center;
-    border-radius: 5px;
     height: 36px;
+    padding: 13px 1vw;
+    box-sizing: content-box;
+    
 }
 .search .svg_box{
+    background-color: #282828;
     width: 8%;
     height: 100%;
     font-size: 18px;
@@ -52,15 +54,20 @@
     align-items: center;
     color: #979797;
 }
-.search input{
-    background-color: #282828;
+.search #searchLable{
     width: 92%;
+    height: 100%;
+    margin-right: 1vw;
+}
+
+.search #searchLable #search{
+    width: 100%;
     height: 100%;
     outline: none;
     border: none;
-    margin-right: 1vw;
     color: #fff;
     font-size: 14px;
+    background-color: #282828;
 }
 /* 搜索框 end*/
 
@@ -68,7 +75,7 @@
     width: 100vw;
     height: 1px;
     background-color: #282828;
-    margin: 10px 0;
+    margin-top: 13px;
 }
 .link_list{
     display: flex;
@@ -88,12 +95,17 @@
 }
 .link_list li:last-child{
     font-size: 14px;
+    border-bottom: none;
 }
 .link_list li a{
     color: #fff;
 }
 .link_list li a:hover{
     color: #b7b7b7;
+}
+.cancel{
+    display: none;
+    cursor: pointer;
 }
 
 #menu{
@@ -155,6 +167,20 @@
 #checkboxClosed:checked ~ .sm_hidden #closed{
     animation: display_none .5s linear;
     display: none;
+}
+
+
+#searchInput:checked ~ .sm_hidden .mobileNav{
+    transition: height .3s linear;
+    height: 0;
+    opacity: 0;
+}
+#searchInput:checked ~.sm_hidden #searchLable div{
+    display: none;
+}
+#searchInput:checked ~.sm_hidden .cancel{
+    display: block;
+    color:blue;
 }
 
 
