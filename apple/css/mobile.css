@@ -35,17 +35,21 @@
     width: 100vw;
 }
 .container .search{
+    padding: 13px 1vw;
+    display: flex;
+}
+.container .search_box{
     width: 90vw;
     margin: 0 4vw 0 5vw;
     display: flex;
     align-items: center;
     height: 36px;
-    padding: 13px 1vw;
     box-sizing: content-box;
-    
-}
-.search .svg_box{
     background-color: #282828;
+    border-radius: 3px;
+}
+
+.search .svg_box{
     width: 8%;
     height: 100%;
     font-size: 18px;
@@ -75,7 +79,6 @@
     width: 100vw;
     height: 1px;
     background-color: #282828;
-    margin-top: 13px;
 }
 .link_list{
     display: flex;
@@ -84,8 +87,7 @@
     justify-content: center;
 }
 .link_list li{
-    animation: change_border .3s cubic-bezier(0.04, 0.04, 0.12, 0.96);
-    width: 90vw;
+    width: 84vw;
     border-bottom: 1px solid #282828;
     height: 44px;
     line-height: 44px;
@@ -104,9 +106,57 @@
     color: #b7b7b7;
 }
 .cancel{
+    color:#6bf;
+    height: 36px;
+    overflow: hidden;
+    font-size: 17px;
     display: none;
     cursor: pointer;
+    line-height: 36px;
+    opacity: 0;
 }
+.cancel:hover{
+    color: #528897;
+}
+
+.search_panel{
+    display: none;
+    width: 100vw;
+}
+.search_panel .fast_link{
+   width: 100%;
+   height: 12px;
+   font-weight: 100;
+   font-size: 11px;
+   color: #888;
+   padding: 13px 0 13px 8vw;
+   text-align: left;
+}
+.search_panel .search_list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.search_panel .search_list li{
+    width: 84vw;
+    border-bottom: 1px solid #282828;
+    height: 44px;
+    line-height: 44px;
+    text-align: left;
+    color: #fff ;
+    font-size: 12px;
+}
+.search_panel .search_list li:last-child{
+    border-bottom: none;
+}
+.search_panel .search_list li a:hover{
+    color: #6bf;
+}
+.search_panel .search_list li a{
+    color: #fff;
+}
+
 
 #menu{
     cursor: pointer;
@@ -114,6 +164,8 @@
 #closed{
     display: none;
     cursor: pointer;
+    font-size: 14px;
+    font-weight: 100;
 }
 
 /* 隐藏菜单按钮 */
@@ -175,16 +227,28 @@
     height: 0;
     opacity: 0;
 }
-#searchInput:checked ~.sm_hidden #searchLable div{
+#searchInput:checked ~ .sm_hidden #searchLable div{
     display: none;
 }
-#searchInput:checked ~.sm_hidden .cancel{
-    display: block;
-    color:blue;
+#searchInput:checked ~ .sm_hidden .search_box{
+    transition: width .5s;
+    width: 77vw;
 }
-
-
-
+#searchInput:checked ~ .sm_hidden .cancel{
+    opacity: 1;
+    display: block;
+}
+#searchInput:checked ~ .sm_hidden .search_panel{
+    display: block;
+}
+#searchInput:checked ~ .sm_hidden .link_list{
+    display: none;
+}
+#searchCancel:checked ~ .sm_hidden .mobileNav{
+    transition: height .3s linear;
+    height: 44px;
+    opacity: 1;
+}
 
 /* 动画 */
 
@@ -198,14 +262,7 @@
         display: block;
     }
 }
-@keyframes change_border{
-    from{
-        border-bottom: 1px solid #fff;
-    }
-    to{
-        border-bottom: 1px solid #282828;
-    }
-}
+
 @keyframes display_none{
     from{
         height: 44px;
