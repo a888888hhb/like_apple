@@ -38,3 +38,25 @@ ul{
     display: none;
 }
 
+/* 
+    中间部分
+*/
+
+.center{
+    width: 100vw;
+}
+
+.center .conten{
+    width: 100%;
+}
+.conten ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sm_letter{
+    font-size: 24px;
+}

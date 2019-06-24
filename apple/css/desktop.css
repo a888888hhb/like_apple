@@ -24,3 +24,62 @@
     color: #b7b7b7;
     
 }
+
+/* 
+    中间部分
+*/
+
+
+.conten ul .fs_li {
+    margin: 5vh 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+}
+.conten ul .fs_li h2{
+    width: 100%;
+    min-width: 999px;
+    text-align: center;
+    color: #111;
+    font-style: normal;
+    margin-bottom: 1vh;
+    font-size: 32px;
+}
+.conten ul .fs_li h3{
+    width: 100%;
+    max-width: 35%;
+    height: 60px;
+    text-align: center;
+    line-height: 30px;
+    color: #111;
+    font-style: normal;
+    font-weight: normal;
+    box-sizing: border-box;
+    font-size: 21px;
+    margin-bottom: 2vh;
+}
+.conten ul .fs_li .buy_link{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fs_li .buy_link a{
+    color: #0070c9;
+    font-size: 20px;
+    margin-right: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fs_li .buy_link a:hover{
+    text-decoration: underline !important;
+}
+.fs_li .buy_link a svg{
+    color: #0070c9;
+    font-size: 14px;
+}
+
