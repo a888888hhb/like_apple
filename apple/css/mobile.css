@@ -341,3 +341,74 @@
     background-position-y: -180px;
     background-image: url(https://www.apple.com/v/home/ej/images/heroes/mac-pro/hero__dvsxv8smkkgi_small.jpg);
 }
+
+
+/* 
+
+*/
+
+.center .shop_list_sm .list_img_sm {
+    width: 100%;
+    height: 500px;
+  }
+  .list_img_sm:nth-child(1) {
+    width: 736px;
+    height: 548px;
+    background-size: 736px 548px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/cn/home/images/promos/ios-13/tile__cauwwcyyn9hy_small.jpg);
+    background-position: center center;
+  }
+  .list_img_sm:nth-child(2) {
+    width: 736px;
+    height: 548px;
+    background-size: 736px 548px;
+    background-repeat: no-repeat;
+      background-image: url(https://www.apple.com/cn/home/images/promos/ipados/tile__cauwwcyyn9hy_small.jpg);
+      background-position: center center;
+  }
+  .list_img_sm:nth-child(3) {
+    width: 736px;
+    height: 500px;
+    background-size: 736px 500px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/cn/home/images/promos/macos/tile__cauwwcyyn9hy_small.jpg);
+    background-position: center center;
+  }
+  .list_img_sm:nth-child(4) {
+    width: 381px;
+    height: 308px;
+    background-size: 381px 308px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/cn/home/images/promos/watchos/watchos6-tile_small.jpg);
+    background-position: center bottom;
+  }
+  .list_img_sm:nth-child(5) {
+    width: 736px;
+    height: 548px;
+    background-size: 736px 548px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/home/ej/images/promos/pro-display-xdr/tile__cauwwcyyn9hy_small.jpg);
+    background-position: center center;
+  }
+  .list_img_sm:nth-child(6) {
+    width: 736px;
+    height: 548px;
+    background-size: 736px 548px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/cn/home/images/promos/wwdc/robot__b7z1041k7guq_small.png);
+    background-position: center center;
+  }
+  
+  .list_img_sm  h3 {
+    font-size: 32px;
+  }
+  .list_img_sm h4 {
+    font-size: 16px;
+  }
+  .list_img_sm a {
+    font-size: 14px;
+  }
+  .list_img_sm a svg {
+    font-size: 12px;
+  }

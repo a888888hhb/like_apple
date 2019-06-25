@@ -42,9 +42,80 @@
     background-image: url(https://www.apple.com/v/home/ej/images/heroes/iphone-xs/main__bmngiblug0mq_mediumtall.jpg);
 }
 .fou_li .bg_img{
-    width: 1068px;
+    width: 1060px;
     height: 698px;
-    background-size: 1068px 698px;
+    background-size: 1060px 698px;
     background-repeat: no-repeat;
     background-image: url(https://www.apple.com/v/home/ej/images/heroes/mac-pro/hero__dvsxv8smkkgi_mediumtall.jpg);
 }
+
+
+/* 
+
+*/
+.center .shop_list_sm .list_img_sm {
+    height: 490px;
+}
+
+.list_img_sm:nth-child(1) {
+    width: 516px;
+    height: 490px;
+    background-size: 516px 490px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/cn/home/images/promos/ios-13/tile__cauwwcyyn9hy_medium.jpg);
+    background-position: center center;
+  }
+  .list_img_sm:nth-child(2) {
+    width: 516px;
+    height: 490px;
+    background-size: 516px 490px;
+    background-repeat: no-repeat;
+      background-image: url(https://www.apple.com/cn/home/images/promos/ipados/tile__cauwwcyyn9hy_medium.jpg);
+      background-position: center center;
+  }
+  .list_img_sm:nth-child(3) {
+    width: 516px;
+    height: 490px;
+    background-size: 516px 490px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/cn/home/images/promos/macos/tile__cauwwcyyn9hy_medium.jpg);
+    background-position: center center;
+  }
+  .list_img_sm:nth-child(4) {
+    width:408px;
+    height: 294px;
+    background-size: 408px 294px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/cn/home/images/promos/watchos/watchos6-tile_medium.jpg);
+    background-position: center bottom;
+  }
+  .list_img_sm:nth-child(5) {
+    width: 516px;
+    height: 490px;
+    background-size: 516px 490px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/home/ej/images/promos/pro-display-xdr/tile__cauwwcyyn9hy_medium.jpg);
+    background-position: center center;
+  }
+  .list_img_sm:nth-child(6) {
+    width: 516px;
+    height: 490px;
+    background-size: 516px 490px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/cn/home/images/promos/wwdc/robot__b7z1041k7guq_medium.png);
+    background-position: center center;
+  }
+  
+  .list_img_sm  h3 {
+    font-size: 32px;
+  }
+  .list_img_sm h4 {
+    font-size: 16px;
+  }
+  .list_img_sm a {
+    font-size: 14px;
+  }
+
+  .list_img_sm a svg {
+    font-size: 12px;
+  }

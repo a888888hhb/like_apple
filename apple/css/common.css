@@ -53,7 +53,7 @@ ul {
 }
 
 .center .conten {
-  width: 100%;
+  width: 100vw;
 }
 .conten ul {
   width: 100%;
@@ -63,7 +63,7 @@ ul {
   flex-direction: column;
 }
 .conten ul .fs_li {
-  margin-top: 8vh;
+  margin-top: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,7 +89,7 @@ ul {
   box-sizing: border-box;
   margin-bottom: 2vh;
 }
-.conten ul .buy_link {
+.buy_link {
   width: 100%;
   text-align: center;
   display: flex;
@@ -167,47 +167,28 @@ ul {
 .center .shop_list_sm .list_img_sm {
   width: 50%;
 }
-.list_img_sm:nth-child(1) {
-  padding: 10px;
-  box-sizing: border-box;
-  width: 1262px;
-  height: 580px;
-  background-size: 1262px 580px;
-  background-repeat: no-repeat;
-  background-image: url(https://www.apple.com/cn/home/images/promos/ios-13/tile__cauwwcyyn9hy_large.jpg);
-}
-.list_img_sm:nth-child(2) {
-    width: 1262px;
-    height: 580px;
-    background-size: 1262px 580px;
-    background-repeat: no-repeat;
-  background-image: url(https://www.apple.com/cn/home/images/promos/ipados/tile__cauwwcyyn9hy_large.jpg);
-}
-.list_img_sm:nth-child(2) h2 {
+
+
+.list_img_sm  h3 {
   text-align: center;
   color: #111;
   font-style: normal;
-  font-size: 42px;
   padding-bottom: 1vh;
 }
-.list_img_sm:nth-child(2) h3 {
+.list_img_sm h4 {
   text-align: center;
   color: #111;
   font-style: normal;
-  font-size: 22px;
-  padding-bottom: 1vh;
+  font-weight: 100;
 }
-.list_img_sm:nth-child(2) a {
+.list_img_sm a {
+  padding-top: 5vh;
   display: block;
   text-align: center;
   color: #0070c9;
   font-style: normal;
-  font-size: 16px;
-  padding-bottom: 2vh;
 }
-.list_img_sm:nth-child(2) .view:hover {
+.list_img_sm .view:hover {
   text-decoration: underline !important;
 }
-.list_img_sm:nth-child(2) a svg {
-  font-size: 14px;
-}
+

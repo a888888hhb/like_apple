@@ -77,12 +77,77 @@
     background-repeat: no-repeat;
     background-image: url(https://www.apple.com/v/home/ej/images/heroes/iphone-xs/main__bmngiblug0mq_largetall.jpg);
 }
+
 .fou_li .bg_img{
-    width: 2560px;
-    height: 736px;
-    background-size: 2560px 736px;
-    background-position-y: -230px;
+    /* width: 2560px;
+    height: 624px;
+    background-size: 2560px 624px;
     background-repeat: no-repeat;
-    background-image: url(https://www.apple.com/v/home/ej/images/heroes/mac-pro/hero__dvsxv8smkkgi_largetall.jpg);
+    background-position-y:-200px;
+    background-image: url(https://www.apple.com/v/home/ej/images/heroes/mac-pro/hero__dvsxv8smkkgi_largetall.jpg); */
 }
 
+.center .shop_list_sm .list_img_sm {
+    height: 580px;
+  }
+  .list_img_sm:nth-child(1) {
+    width: 1262px;
+    height: 580px;
+    background-size: 1262px 580px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/cn/home/images/promos/ios-13/tile__cauwwcyyn9hy_large.jpg);
+    background-position: center center;
+  }
+  .list_img_sm:nth-child(2) {
+      width: 1262px;
+      height: 580px;
+      background-size: 1262px 580px;
+      background-repeat: no-repeat;
+      background-image: url(https://www.apple.com/cn/home/images/promos/ipados/tile__cauwwcyyn9hy_large.jpg);
+      background-position: center center;
+  }
+  .list_img_sm:nth-child(3) {
+    width: 1262px;
+    height: 580px;
+    background-size: 1262px 580px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/cn/home/images/promos/macos/tile__cauwwcyyn9hy_large.jpg);
+    background-position: center center;
+  }
+  .list_img_sm:nth-child(4) {
+    width: 541px;
+    height: 366px;
+    background-size: 541px 366px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/cn/home/images/promos/watchos/watchos6-tile_large.jpg);
+    background-position: center bottom;
+  }
+  .list_img_sm:nth-child(5) {
+    width: 1262px;
+    height: 580px;
+    background-size: 1262px 580px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/home/ej/images/promos/pro-display-xdr/tile__cauwwcyyn9hy_large.jpg);
+    background-position: center center;
+  }
+  .list_img_sm:nth-child(6) {
+    width: 1262px;
+    height: 580px;
+    background-size: 1262px 580px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/cn/home/images/promos/wwdc/robot__b7z1041k7guq_large.png);
+    background-position: center center;
+  }
+  
+  .list_img_sm  h3 {
+    font-size: 40px;
+  }
+  .list_img_sm h4 {
+    font-size: 18px;
+  }
+  .list_img_sm a {
+    font-size: 16px;
+  }
+  .list_img_sm a svg {
+    font-size: 14px;
+  }
