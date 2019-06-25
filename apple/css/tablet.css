@@ -1,0 +1,50 @@
+.conten ul .fs_li h2{
+    font-size: 28px;
+}
+.conten ul .fs_li h3{
+    font-size: 18px;
+}
+.fs_li .buy_link a{
+    font-size: 18px;
+}
+.buy_link a svg{
+    font-size: 14px;
+}
+.sm_letter{
+    font-size: 18px;
+}
+
+.conten ul .shop_title h2{
+    font-size: 38px;
+}
+.conten ul .shop_title h3{
+    font-size: 18px;
+}
+.border_letter{
+    width: 22px;
+    height: 22px;
+}
+.border_letter span{
+    font-size: 16px;
+}
+.sec_li .bg_img{
+    width: 692px;
+    height: 426px;
+    background-size: 692px 426px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/cn/home/images/heroes/spring-iphone-xr/iphone_xr__b0z59ak0bqdy_mediumtall.jpg);
+}
+.th_li .bg_img{
+    width: 974px;
+    height: 387px;
+    background-size: 974px 387px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/home/ej/images/heroes/iphone-xs/main__bmngiblug0mq_mediumtall.jpg);
+}
+.fou_li .bg_img{
+    width: 1068px;
+    height: 698px;
+    background-size: 1068px 698px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/home/ej/images/heroes/mac-pro/hero__dvsxv8smkkgi_mediumtall.jpg);
+}

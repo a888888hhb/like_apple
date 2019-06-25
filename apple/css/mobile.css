@@ -5,6 +5,7 @@
     transition: height .5s cubic-bezier(0.04, 0.04, 0.12, 0.96);
     width: 100vw;
     height: 44px;
+    z-index: 999;
 }
 .mobileNav{
     height: 44px;
@@ -13,6 +14,7 @@
     list-style: none;
     align-items: center;
     justify-content: space-between;
+    z-index: 999;
 }
 .mobileNav li{
     flex: 1;
@@ -31,8 +33,9 @@
 
 /* 搜索框 */
 .container{
-    opacity: 0;
+    /* opacity: 0; */
     width: 100vw;
+    display: none;
 }
 .container .search{
     padding: 13px 1vw;
@@ -191,8 +194,8 @@
     opacity:0;
 }
 #checkboxMenu:checked ~ .sm_hidden .container{
-    transition: opacity 0.5s ease;
-    opacity: 1;
+    transition: display 0.5s ease;
+    display: block;
 }
 
 
@@ -277,3 +280,64 @@
 /* 
     中间部分
 */
+.conten ul .fs_li h2{
+    font-size: 24px;
+    max-width: 600px;
+    min-width: 360px;
+}
+.conten ul .fs_li h3{
+    font-size: 16px;
+    max-width: 360px;
+}
+.buy_link a{
+    font-size: 16px;
+    z-index: 998;
+}
+.buy_link a svg{
+    font-size: 12px;
+}
+.sm_letter{
+    font-size: 18px;
+}
+.border_letter{
+    width: 18px;
+    height: 18px;
+}
+.border_letter span{
+    font-size: 12px;
+}
+.conten ul .shop_title h2{
+    font-size: 32px;
+}
+.conten ul .shop_title h3{
+    font-size: 16px;
+}
+
+.sec_li br{
+    display: none;
+}
+
+.sec_li .bg_img{
+    margin-top: 50px;
+    width: 279px;
+    height: 351px;
+    background-size: 279px 351px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/cn/home/images/heroes/spring-iphone-xr/iphone_xr__b0z59ak0bqdy_small.jpg);
+}
+.th_li .bg_img{
+    margin-top: 50px;
+    width: 220px;
+    height: 309px;
+    background-size: 220px 309px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/home/ej/images/heroes/iphone-xs/main__bmngiblug0mq_small.jpg);
+}
+.fou_li .bg_img{
+    width: 736px;
+    height: 548px;
+    background-size: 736px 548px;
+    background-repeat: no-repeat;
+    background-position-y: -180px;
+    background-image: url(https://www.apple.com/v/home/ej/images/heroes/mac-pro/hero__dvsxv8smkkgi_small.jpg);
+}

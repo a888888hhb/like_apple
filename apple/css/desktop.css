@@ -22,7 +22,6 @@
 }
 .xs_hidden li a:hover{
     color: #b7b7b7;
-    
 }
 
 /* 
@@ -30,56 +29,60 @@
 */
 
 
-.conten ul .fs_li {
-    margin: 5vh 0 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 80%;
-}
+
 .conten ul .fs_li h2{
-    width: 100%;
-    min-width: 999px;
-    text-align: center;
-    color: #111;
-    font-style: normal;
-    margin-bottom: 1vh;
+    min-width: 1000px;
     font-size: 32px;
 }
 .conten ul .fs_li h3{
-    width: 100%;
-    max-width: 35%;
-    height: 60px;
-    text-align: center;
-    line-height: 30px;
-    color: #111;
-    font-style: normal;
-    font-weight: normal;
-    box-sizing: border-box;
-    font-size: 21px;
-    margin-bottom: 2vh;
-}
-.conten ul .fs_li .buy_link{
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.fs_li .buy_link a{
-    color: #0070c9;
+    max-width: 500px;
     font-size: 20px;
-    margin-right: 2vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-.fs_li .buy_link a:hover{
-    text-decoration: underline !important;
+
+.buy_link a{
+    font-size: 20px;
 }
-.fs_li .buy_link a svg{
-    color: #0070c9;
+
+.buy_link a svg{
     font-size: 14px;
+}
+
+.border_letter span{
+    font-size: 20px;
+}
+.border_letter{
+    width: 26px;
+    height: 26px;
+}
+.conten ul .shop_title h2{
+    font-size: 42px;
+}
+.conten ul .shop_title h3{
+    font-size: 22px;
+}
+.th_li h3{
+    max-width: 600px;
+}
+.sec_li .bg_img{
+    width: 865px;
+    height: 471px;
+    background-size: 865px 471px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/cn/home/images/heroes/spring-iphone-xr/iphone_xr__b0z59ak0bqdy_largetall.jpg);
+}
+.th_li .bg_img{
+    width: 950px;
+    height: 390px;
+    background-size: 950px 390px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/home/ej/images/heroes/iphone-xs/main__bmngiblug0mq_largetall.jpg);
+}
+.fou_li .bg_img{
+    width: 2560px;
+    height: 736px;
+    background-size: 2560px 736px;
+    background-position-y: -230px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/home/ej/images/heroes/mac-pro/hero__dvsxv8smkkgi_largetall.jpg);
 }
 
