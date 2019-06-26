@@ -56,11 +56,14 @@ ul {
   width: 100vw;
 }
 .conten ul {
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.conten ul li{
+  width: 100%;
 }
 .conten ul .fs_li {
   margin-top: 10vh;
@@ -68,7 +71,6 @@ ul {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 90%;
   margin-bottom: 5vh;
 }
 
@@ -124,7 +126,6 @@ ul {
 
 .conten ul .shop_title {
   margin-top: 5vh;
-  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -170,6 +171,8 @@ ul {
 
 
 .list_img_sm  h3 {
+  padding-top: 2vh;
+  box-sizing: border-box;
   text-align: center;
   color: #111;
   font-style: normal;
@@ -182,7 +185,7 @@ ul {
   font-weight: 100;
 }
 .list_img_sm a {
-  padding-top: 5vh;
+  padding-top: 2vh;
   display: block;
   text-align: center;
   color: #0070c9;

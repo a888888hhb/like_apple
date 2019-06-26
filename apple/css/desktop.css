@@ -6,7 +6,7 @@
     text-align: center;
     height:100%;
     width: 90vw;
-    max-width: 1000px;
+    /* max-width: 1000px; */
     display: flex;
     list-style: none;
     justify-content: center;
@@ -31,11 +31,11 @@
 
 
 .conten ul .fs_li h2{
-    min-width: 1000px;
+    /* min-width: 1000px; */
     font-size: 32px;
 }
 .conten ul .fs_li h3{
-    max-width: 500px;
+    /* max-width: 500px; */
     font-size: 20px;
 }
 
@@ -61,9 +61,10 @@
     font-size: 22px;
 }
 .th_li h3{
-    max-width: 600px;
+    /* max-width: 600px; */
 }
 .sec_li .bg_img{
+    max-width: 100%;
     width: 865px;
     height: 471px;
     background-size: 865px 471px;
@@ -71,6 +72,7 @@
     background-image: url(https://www.apple.com/cn/home/images/heroes/spring-iphone-xr/iphone_xr__b0z59ak0bqdy_largetall.jpg);
 }
 .th_li .bg_img{
+    max-width: 100%;
     width: 950px;
     height: 390px;
     background-size: 950px 390px;
@@ -79,18 +81,22 @@
 }
 
 .fou_li .bg_img{
-    /* width: 2560px;
-    height: 624px;
-    background-size: 2560px 624px;
+    overflow: auto;
+    max-width: 100%;
+    width: 2560px;
+    height: 736px;
+    background-size: 2560px 736px;
     background-repeat: no-repeat;
-    background-position-y:-200px;
-    background-image: url(https://www.apple.com/v/home/ej/images/heroes/mac-pro/hero__dvsxv8smkkgi_largetall.jpg); */
+    background-position-y: -250px;
+    background-position-x: center;
+    background-image: url(https://www.apple.com/v/home/ej/images/heroes/mac-pro/hero__dvsxv8smkkgi_largetall.jpg);
 }
 
 .center .shop_list_sm .list_img_sm {
     height: 580px;
   }
   .list_img_sm:nth-child(1) {
+    max-width: 100%;
     width: 1262px;
     height: 580px;
     background-size: 1262px 580px;
@@ -99,6 +105,7 @@
     background-position: center center;
   }
   .list_img_sm:nth-child(2) {
+    max-width: 100%;
       width: 1262px;
       height: 580px;
       background-size: 1262px 580px;
@@ -107,6 +114,7 @@
       background-position: center center;
   }
   .list_img_sm:nth-child(3) {
+    max-width: 100%;
     width: 1262px;
     height: 580px;
     background-size: 1262px 580px;
@@ -115,6 +123,7 @@
     background-position: center center;
   }
   .list_img_sm:nth-child(4) {
+    max-width: 100%;
     width: 541px;
     height: 366px;
     background-size: 541px 366px;
@@ -123,6 +132,7 @@
     background-position: center bottom;
   }
   .list_img_sm:nth-child(5) {
+    max-width: 100%;
     width: 1262px;
     height: 580px;
     background-size: 1262px 580px;
@@ -131,6 +141,7 @@
     background-position: center center;
   }
   .list_img_sm:nth-child(6) {
+    max-width: 100%;
     width: 1262px;
     height: 580px;
     background-size: 1262px 580px;

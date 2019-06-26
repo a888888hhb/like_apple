@@ -1,414 +1,419 @@
-.xs_hidden{
+.xs_hidden {
   display: none !important;
 }
-.sm_hidden{
-    transition: height .5s cubic-bezier(0.04, 0.04, 0.12, 0.96);
-    width: 100vw;
-    height: 44px;
-    z-index: 999;
+.sm_hidden {
+  transition: height 0.5s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  width: 100vw;
+  height: 44px;
+  z-index: 999;
 }
-.mobileNav{
-    height: 44px;
-    width: 100%;
-    display: flex;
-    list-style: none;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 999;
+.mobileNav {
+  height: 44px;
+  width: 100%;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
 }
-.mobileNav li{
-    flex: 1;
+.mobileNav li {
+  flex: 1;
 }
-.mobileNav li a:hover{
-    color: #b7b7b7;
+.mobileNav li a:hover {
+  color: #b7b7b7;
 }
-.mobileNav li:first-child{
-    text-align: left;
-    margin-left: 20px;
+.mobileNav li:first-child {
+  text-align: left;
+  margin-left: 20px;
 }
-.mobileNav li:last-child{
-    text-align: right;
-    margin-right: 20px;
+.mobileNav li:last-child {
+  text-align: right;
+  margin-right: 20px;
 }
 
 /* 搜索框 */
-.container{
-    /* opacity: 0; */
-    width: 100vw;
-    display: none;
+.container {
+  /* opacity: 0; */
+  width: 100vw;
+  display: none;
 }
-.container .search{
-    padding: 13px 1vw;
-    display: flex;
+.container .search {
+  padding: 13px 1vw;
+  display: flex;
 }
-.container .search_box{
-    width: 90vw;
-    margin: 0 4vw 0 5vw;
-    display: flex;
-    align-items: center;
-    height: 36px;
-    box-sizing: content-box;
-    background-color: #282828;
-    border-radius: 3px;
-}
-
-.search .svg_box{
-    width: 8%;
-    height: 100%;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #979797;
-}
-.search #searchLable{
-    width: 92%;
-    height: 100%;
-    margin-right: 1vw;
+.container .search_box {
+  width: 90vw;
+  margin: 0 4vw 0 5vw;
+  display: flex;
+  align-items: center;
+  height: 36px;
+  box-sizing: content-box;
+  background-color: #282828;
+  border-radius: 3px;
 }
 
-.search #searchLable #search{
-    width: 100%;
-    height: 100%;
-    outline: none;
-    border: none;
-    color: #fff;
-    font-size: 14px;
-    background-color: #282828;
+.search .svg_box {
+  width: 8%;
+  height: 100%;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #979797;
+}
+.search #searchLable {
+  width: 92%;
+  height: 100%;
+  margin-right: 1vw;
+}
+
+.search #searchLable #search {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  background-color: #282828;
 }
 /* 搜索框 end*/
 
-.container .dividing_line{
-    width: 100vw;
-    height: 1px;
-    background-color: #282828;
+.container .dividing_line {
+  width: 100vw;
+  height: 1px;
+  background-color: #282828;
 }
-.link_list{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.link_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.link_list li{
-    width: 84vw;
-    border-bottom: 1px solid #282828;
-    height: 44px;
-    line-height: 44px;
-    text-align: left;
-    color: #fff ;
-    font-size: 17px;
+.link_list li {
+  width: 84vw;
+  border-bottom: 1px solid #282828;
+  height: 44px;
+  line-height: 44px;
+  text-align: left;
+  color: #fff;
+  font-size: 17px;
 }
-.link_list li:last-child{
-    font-size: 14px;
-    border-bottom: none;
+.link_list li:last-child {
+  font-size: 14px;
+  border-bottom: none;
 }
-.link_list li a{
-    color: #fff;
+.link_list li a {
+  color: #fff;
 }
-.link_list li a:hover{
-    color: #b7b7b7;
+.link_list li a:hover {
+  color: #b7b7b7;
 }
-.cancel{
-    color:#6bf;
-    height: 36px;
-    overflow: hidden;
-    font-size: 17px;
-    display: none;
-    cursor: pointer;
-    line-height: 36px;
-    opacity: 0;
+.cancel {
+  color: #6bf;
+  height: 36px;
+  overflow: hidden;
+  font-size: 17px;
+  display: none;
+  cursor: pointer;
+  line-height: 36px;
+  opacity: 0;
 }
-.cancel:hover{
-    color: #528897;
-}
-
-.search_panel{
-    display: none;
-    width: 100vw;
-}
-.search_panel .fast_link{
-   width: 100%;
-   height: 12px;
-   font-weight: 100;
-   font-size: 11px;
-   color: #888;
-   padding: 13px 0 13px 8vw;
-   text-align: left;
-}
-.search_panel .search_list{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.search_panel .search_list li{
-    width: 84vw;
-    border-bottom: 1px solid #282828;
-    height: 44px;
-    line-height: 44px;
-    text-align: left;
-    color: #fff ;
-    font-size: 12px;
-}
-.search_panel .search_list li:last-child{
-    border-bottom: none;
-}
-.search_panel .search_list li a:hover{
-    color: #6bf;
-}
-.search_panel .search_list li a{
-    color: #fff;
+.cancel:hover {
+  color: #528897;
 }
 
-
-#menu{
-    cursor: pointer;
+.search_panel {
+  display: none;
+  width: 100vw;
 }
-#closed{
-    display: none;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 100;
+.search_panel .fast_link {
+  width: 100%;
+  height: 12px;
+  font-weight: 100;
+  font-size: 11px;
+  color: #888;
+  padding: 13px 0 13px 8vw;
+  text-align: left;
+}
+.search_panel .search_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.search_panel .search_list li {
+  width: 84vw;
+  border-bottom: 1px solid #282828;
+  height: 44px;
+  line-height: 44px;
+  text-align: left;
+  color: #fff;
+  font-size: 12px;
+}
+.search_panel .search_list li:last-child {
+  border-bottom: none;
+}
+.search_panel .search_list li a:hover {
+  color: #6bf;
+}
+.search_panel .search_list li a {
+  color: #fff;
+}
+
+#menu {
+  cursor: pointer;
+}
+#closed {
+  display: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 100;
 }
 
 /* 隐藏菜单按钮 */
-#checkboxMenu:checked ~ .sm_hidden #menu{
-    display: none;
+#checkboxMenu:checked ~ .sm_hidden #menu {
+  display: none;
 }
-#checkboxMenu:checked #checkboxClosed:checked{
-    display: none;
+#checkboxMenu:checked #checkboxClosed:checked {
+  display: none;
 }
 /* 显示关闭按钮 */
-#checkboxMenu:checked ~ .sm_hidden #closed{
-    animation: display_block .7s linear;
-    display: block;
+#checkboxMenu:checked ~ .sm_hidden #closed {
+  animation: display_block 0.7s linear;
+  display: block;
 }
 
-#checkboxMenu:checked ~ .sm_hidden{
-    transition:  height .5s cubic-bezier(0.04, 0.04, 0.12, 0.96);
-    height: 100vh;
-    background-color: #000;
+#checkboxMenu:checked ~ .sm_hidden {
+  transition: height 0.5s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  height: 100vh;
+  background-color: #000;
 }
-#checkboxMenu:checked ~ .sm_hidden .shop_bag{
-    transition: opacity 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-    opacity:0;
+#checkboxMenu:checked ~ .sm_hidden .shop_bag {
+  transition: opacity 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  opacity: 0;
 }
-#checkboxMenu:checked ~ .sm_hidden .container{
-    transition: display 0.5s ease;
-    display: block;
-}
-
-
-#checkboxClosed:checked ~ .sm_hidden{
-    transition: height .5s cubic-bezier(0.04, 0.04, 0.12, 0.96),background-color .5s ease-in;
-    height: 44px;
-    background-color: #282828;
+#checkboxMenu:checked ~ .sm_hidden .container {
+  transition: display 0.5s ease;
+  display: block;
 }
 
-
-#checkboxClosed:checked ~ .sm_hidden .container{
-    transition: opacity 0.5s ease-out;
-    opacity: 0;
+#checkboxClosed:checked ~ .sm_hidden {
+  transition: height 0.5s cubic-bezier(0.04, 0.04, 0.12, 0.96),
+    background-color 0.5s ease-in;
+  height: 44px;
+  background-color: #282828;
 }
-#checkboxClosed:checked ~ .sm_hidden .shop_bag{
-    transition: opacity 0.5s ease-in;
-    opacity:1;
+
+#checkboxClosed:checked ~ .sm_hidden .container {
+  transition: opacity 0.5s ease-out;
+  opacity: 0;
+}
+#checkboxClosed:checked ~ .sm_hidden .shop_bag {
+  transition: opacity 0.5s ease-in;
+  opacity: 1;
 }
 /* 显示菜单按钮 */
-#checkboxClosed:checked ~ .sm_hidden #menu{
-    display: block;
+#checkboxClosed:checked ~ .sm_hidden #menu {
+  display: block;
 }
 /* 隐藏关闭按钮 */
-#checkboxClosed:checked ~ .sm_hidden #closed{
-    animation: display_none .5s linear;
-    display: none;
+#checkboxClosed:checked ~ .sm_hidden #closed {
+  animation: display_none 0.5s linear;
+  display: none;
 }
 
-
-#searchInput:checked ~ .sm_hidden .mobileNav{
-    transition: height .3s linear;
-    height: 0;
-    opacity: 0;
+#searchInput:checked ~ .sm_hidden .mobileNav {
+  transition: height 0.3s linear;
+  height: 0;
+  opacity: 0;
 }
-#searchInput:checked ~ .sm_hidden #searchLable div{
-    display: none;
+#searchInput:checked ~ .sm_hidden #searchLable div {
+  display: none;
 }
-#searchInput:checked ~ .sm_hidden .search_box{
-    transition: width .5s;
-    width: 77vw;
+#searchInput:checked ~ .sm_hidden .search_box {
+  transition: width 0.5s;
+  width: 77vw;
 }
-#searchInput:checked ~ .sm_hidden .cancel{
-    opacity: 1;
-    display: block;
+#searchInput:checked ~ .sm_hidden .cancel {
+  opacity: 1;
+  display: block;
 }
-#searchInput:checked ~ .sm_hidden .search_panel{
-    display: block;
+#searchInput:checked ~ .sm_hidden .search_panel {
+  display: block;
 }
-#searchInput:checked ~ .sm_hidden .link_list{
-    display: none;
+#searchInput:checked ~ .sm_hidden .link_list {
+  display: none;
 }
-#searchCancel:checked ~ .sm_hidden .mobileNav{
-    transition: height .3s linear;
-    height: 44px;
-    opacity: 1;
+#searchCancel:checked ~ .sm_hidden .mobileNav {
+  transition: height 0.3s linear;
+  height: 44px;
+  opacity: 1;
 }
 
 /* 动画 */
 
-@keyframes display_block{
-    from{
-        height: 0;
-        display: none;
-    }
-    to{
-        height: 44px;
-        display: block;
-    }
+@keyframes display_block {
+  from {
+    height: 0;
+    display: none;
+  }
+  to {
+    height: 44px;
+    display: block;
+  }
 }
 
-@keyframes display_none{
-    from{
-        height: 44px;
-    }
-    to{
-        height: 0;
-    }
+@keyframes display_none {
+  from {
+    height: 44px;
+  }
+  to {
+    height: 0;
+  }
 }
 /* 动画 end*/
-
 
 /* 
     中间部分
 */
-.conten ul .fs_li h2{
-    font-size: 24px;
-    max-width: 600px;
-    min-width: 360px;
+.conten ul .fs_li h2 {
+  font-size: 24px;
+  max-width: 600px;
+  min-width: 360px;
 }
-.conten ul .fs_li h3{
-    font-size: 16px;
-    max-width: 360px;
+.conten ul .fs_li h3 {
+  font-size: 16px;
+  max-width: 360px;
 }
-.buy_link a{
-    font-size: 16px;
-    z-index: 998;
+.buy_link a {
+  font-size: 16px;
+  z-index: 998;
 }
-.buy_link a svg{
-    font-size: 12px;
+.buy_link a svg {
+  font-size: 12px;
 }
-.sm_letter{
-    font-size: 18px;
+.sm_letter {
+  font-size: 18px;
 }
-.border_letter{
-    width: 18px;
-    height: 18px;
+.border_letter {
+  width: 18px;
+  height: 18px;
 }
-.border_letter span{
-    font-size: 12px;
+.border_letter span {
+  font-size: 12px;
 }
-.conten ul .shop_title h2{
-    font-size: 32px;
+.conten ul .shop_title h2 {
+  font-size: 32px;
 }
-.conten ul .shop_title h3{
-    font-size: 16px;
-}
-
-.sec_li br{
-    display: none;
+.conten ul .shop_title h3 {
+  font-size: 16px;
 }
 
-.sec_li .bg_img{
-    margin-top: 50px;
-    width: 279px;
-    height: 351px;
-    background-size: 279px 351px;
-    background-repeat: no-repeat;
-    background-image: url(https://www.apple.com/cn/home/images/heroes/spring-iphone-xr/iphone_xr__b0z59ak0bqdy_small.jpg);
-}
-.th_li .bg_img{
-    margin-top: 50px;
-    width: 220px;
-    height: 309px;
-    background-size: 220px 309px;
-    background-repeat: no-repeat;
-    background-image: url(https://www.apple.com/v/home/ej/images/heroes/iphone-xs/main__bmngiblug0mq_small.jpg);
-}
-.fou_li .bg_img{
-    width: 736px;
-    height: 548px;
-    background-size: 736px 548px;
-    background-repeat: no-repeat;
-    background-position-y: -180px;
-    background-image: url(https://www.apple.com/v/home/ej/images/heroes/mac-pro/hero__dvsxv8smkkgi_small.jpg);
+.sec_li br {
+  display: none;
 }
 
+.sec_li .bg_img {
+  max-width: 100%;
+  margin-top: 50px;
+  width: 279px;
+  height: 351px;
+  background-size: 279px 351px;
+  background-repeat: no-repeat;
+  background-image: url(https://www.apple.com/cn/home/images/heroes/spring-iphone-xr/iphone_xr__b0z59ak0bqdy_small.jpg);
+}
+.th_li .bg_img {
+  max-width: 100%;
+  margin-top: 50px;
+  width: 220px;
+  height: 309px;
+  background-size: 220px 309px;
+  background-repeat: no-repeat;
+  background-image: url(https://www.apple.com/v/home/ej/images/heroes/iphone-xs/main__bmngiblug0mq_small.jpg);
+}
+.fou_li .bg_img {
+  max-width: 100%;
+  width: 736px;
+  height: 548px;
+  background-size: 736px 548px;
+  background-repeat: no-repeat;
+  background-position-y: -180px;
+  background-position-x: center;
+  background-image: url(https://www.apple.com/v/home/ej/images/heroes/mac-pro/hero__dvsxv8smkkgi_small.jpg);
+}
 
 /* 
 
 */
 
 .center .shop_list_sm .list_img_sm {
-    width: 100%;
-    height: 500px;
-  }
-  .list_img_sm:nth-child(1) {
-    width: 736px;
-    height: 548px;
-    background-size: 736px 548px;
-    background-repeat: no-repeat;
-    background-image: url(https://www.apple.com/cn/home/images/promos/ios-13/tile__cauwwcyyn9hy_small.jpg);
-    background-position: center center;
-  }
-  .list_img_sm:nth-child(2) {
-    width: 736px;
-    height: 548px;
-    background-size: 736px 548px;
-    background-repeat: no-repeat;
-      background-image: url(https://www.apple.com/cn/home/images/promos/ipados/tile__cauwwcyyn9hy_small.jpg);
-      background-position: center center;
-  }
-  .list_img_sm:nth-child(3) {
-    width: 736px;
-    height: 500px;
-    background-size: 736px 500px;
-    background-repeat: no-repeat;
-    background-image: url(https://www.apple.com/cn/home/images/promos/macos/tile__cauwwcyyn9hy_small.jpg);
-    background-position: center center;
-  }
-  .list_img_sm:nth-child(4) {
-    width: 381px;
-    height: 308px;
-    background-size: 381px 308px;
-    background-repeat: no-repeat;
-    background-image: url(https://www.apple.com/cn/home/images/promos/watchos/watchos6-tile_small.jpg);
-    background-position: center bottom;
-  }
-  .list_img_sm:nth-child(5) {
-    width: 736px;
-    height: 548px;
-    background-size: 736px 548px;
-    background-repeat: no-repeat;
-    background-image: url(https://www.apple.com/v/home/ej/images/promos/pro-display-xdr/tile__cauwwcyyn9hy_small.jpg);
-    background-position: center center;
-  }
-  .list_img_sm:nth-child(6) {
-    width: 736px;
-    height: 548px;
-    background-size: 736px 548px;
-    background-repeat: no-repeat;
-    background-image: url(https://www.apple.com/cn/home/images/promos/wwdc/robot__b7z1041k7guq_small.png);
-    background-position: center center;
-  }
-  
-  .list_img_sm  h3 {
-    font-size: 32px;
-  }
-  .list_img_sm h4 {
-    font-size: 16px;
-  }
-  .list_img_sm a {
-    font-size: 14px;
-  }
-  .list_img_sm a svg {
-    font-size: 12px;
-  }
+  width: 100%;
+  height: 500px;
+}
+.list_img_sm:nth-child(1) {
+  max-width: 100%;
+  width: 736px;
+  height: 548px;
+  background-size: 736px 548px;
+  background-repeat: no-repeat;
+  background-image: url(https://www.apple.com/cn/home/images/promos/ios-13/tile__cauwwcyyn9hy_small.jpg);
+  background-position: center center;
+}
+.list_img_sm:nth-child(2) {
+  max-width: 100%;
+  width: 736px;
+  height: 548px;
+  background-size: 736px 548px;
+  background-repeat: no-repeat;
+  background-image: url(https://www.apple.com/cn/home/images/promos/ipados/tile__cauwwcyyn9hy_small.jpg);
+  background-position: center center;
+}
+.list_img_sm:nth-child(3) {
+  max-width: 100%;
+  width: 736px;
+  height: 500px;
+  background-size: 736px 500px;
+  background-repeat: no-repeat;
+  background-image: url(https://www.apple.com/cn/home/images/promos/macos/tile__cauwwcyyn9hy_small.jpg);
+  background-position: center center;
+}
+.list_img_sm:nth-child(4) {
+  max-width: 100%;
+  width: 381px;
+  height: 308px;
+  background-size: 381px 308px;
+  background-repeat: no-repeat;
+  background-image: url(https://www.apple.com/cn/home/images/promos/watchos/watchos6-tile_small.jpg);
+  background-position: center bottom;
+}
+.list_img_sm:nth-child(5) {
+  max-width: 100%;
+  width: 736px;
+  height: 548px;
+  background-size: 736px 548px;
+  background-repeat: no-repeat;
+  background-image: url(https://www.apple.com/v/home/ej/images/promos/pro-display-xdr/tile__cauwwcyyn9hy_small.jpg);
+  background-position: center center;
+}
+.list_img_sm:nth-child(6) {
+  max-width: 100%;
+  width: 736px;
+  height: 548px;
+  background-size: 736px 548px;
+  background-repeat: no-repeat;
+  background-image: url(https://www.apple.com/cn/home/images/promos/wwdc/robot__b7z1041k7guq_small.png);
+  background-position: center center;
+}
+
+.list_img_sm h3 {
+  font-size: 32px;
+}
+.list_img_sm h4 {
+  font-size: 16px;
+}
+.list_img_sm a {
+  font-size: 14px;
+}
+.list_img_sm a svg {
+  font-size: 12px;
+}
