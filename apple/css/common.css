@@ -142,13 +142,16 @@ ul {
   font-style: normal;
   color: #111;
 }
-
+.shop_title a:first-child {
+  text-decoration: none;
+}
 .conten ul .shop_title h2 {
   max-width: 90vw;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 1vh;
+  color: #111;
 }
 
 .conten ul .shop_title h3 {
@@ -163,6 +166,7 @@ ul {
 }
 
 .border_letter {
+
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -274,5 +278,63 @@ foot 部分
   color: #555;
 }
 .info_list li a:hover{
+  text-decoration: underline !important;
+}
+
+
+
+#list_button1_1,
+#list_button1_2,
+#list_button2_1,
+#list_button2_2,
+#list_button3_1,
+#list_button3_2,
+#list_button4_1,
+#list_button4_2,
+#list_button5_1,
+#list_button5_2,
+#list_button6_1,
+#list_button6_2,
+#list_button7_1,
+#list_button7_2{
+  display: none !important;
+}
+
+.foot_shop{
+  font-size: 12px;
+  color: #888;
+  align-self: flex-start;
+  padding-left: 5vw;
+  padding-top: 2vh;
+}
+
+.foot_shop a{
+  text-decoration: none;
+  color: #0070c9;
+}
+
+.footer_legal{
+  padding: 2vh 5vw;
+  display: flex;
+  font-size: 12px;
+  color: #888;
+  align-self: flex-start;
+}
+.footer_legal_links{
+  padding-left: 2vw;
+}
+.footer_legal_link{
+  text-decoration: none;
+  color: #888;
+  padding-right: 1vw;
+  border-right: 1px solid #888;
+}
+.footer_legal_link:last-child{
+  border-right: none;
+}
+
+
+.foot_shop a:hover,
+.footer_legal_link:hover{
   text-decoration: underline !important;
 }

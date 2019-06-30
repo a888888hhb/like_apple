@@ -1,431 +1,695 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/common.css">
-    <link media="(min-width:768px)" rel="stylesheet" href="css/desktop.css">
-    <link media="(max-width:767px)" rel="stylesheet" href="css/mobile.css">
-    <link media="(max-width:1070px) and (min-width:769px)" rel="stylesheet" href="css/tablet.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link media="(min-width:768px)" rel="stylesheet" href="css/desktop.css" />
+    <link media="(max-width:767px)" rel="stylesheet" href="css/mobile.css" />
+    <link
+      media="(max-width:1070px) and (min-width:769px)"
+      rel="stylesheet"
+      href="css/tablet.css"
+    />
     <script src="js/symbol.js"></script>
     <script src="js/main.js"></script>
     <title>Apple</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="header">
-        <div class="nav">
-            <ul class="xs_hidden">
-                <li class="logo">
-                    <a href="https://www.apple.com/cn/" title="这个链接将跳转至apple(中国大陆)-官方网站对应页面">
-                        <svg class="icon icon_nomral" aria-hidden="true">
-                            <use xlink:href="#icon-IOS"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.apple.com/cn/mac/" title="这个链接将跳转至apple(中国大陆)-官方网站对应页面">
-                        Mac
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.apple.com/cn/ipad/" title="这个链接将跳转至apple(中国大陆)-官方网站对应页面">
-                        iPad
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.apple.com/cn/iphone/" title="这个链接将跳转至apple(中国大陆)-官方网站对应页面">
-                        iPhone
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.apple.com/cn/watch/" title="这个链接将跳转至apple(中国大陆)-官方网站对应页面">
-                        Watch
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.apple.com/cn/music/" title="这个链接将跳转至apple(中国大陆)-官方网站对应页面">
-                        Music
-                    </a>
-                </li>
-                <li>
-                    <a href="https://support.apple.com/zh-cn" title="这个链接将跳转至apple(中国大陆)-官方网站对应页面">
-                        技术支持
-                    </a>
-                </li>
-                <li class="logo" title="这个链接将跳转至apple(中国大陆)-官方网站对应页面">
-                    <a href="#">
-                        <svg class="icon icon_nomral" aria-hidden="true">
-                            <use xlink:href="#icon-ios-search"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="logo">
-                    <a href="#" title="这个链接将跳转至apple(中国大陆)-官方网站对应页面">
-                        <svg class="icon icon_nomral" aria-hidden="true">
-                            <use xlink:href="#icon-bag"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-            <input type="radio" id="checkboxMenu" name="menu">
-            <input type="radio" id="checkboxClosed" name="menu">
-            <input type="radio" id="searchInput" name="search">
-            <input type="radio" id="searchCancel" name="search">
-            <div class="sm_hidden">
-                <ul class="mobileNav">
-                    <li class="logo">
-                        <label for="checkboxMenu">
-                            <svg class="icon icon_nomral" aria-hidden="true" id="menu">
-                                <use xlink:href="#icon-ios-menu"></use>
-                            </svg>
-                        </label>
-                        <label for="checkboxClosed">
-                            <svg class="icon icon_nomral" aria-hidden="true" id="closed">
-                                <use xlink:href="#icon-closed"></use>
-                            </svg>
-                        </label>
-                    </li>
-                    <li class="logo">
-                        <a href="https://www.apple.com/cn/" title="这个链接将跳转至apple(中国大陆)-官方网站对应页面">
-                            <svg class="icon icon_nomral" aria-hidden="true">
-                                <use xlink:href="#icon-IOS"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="logo">
-                        <a href="#" title="这个链接将跳转至apple(中国大陆)-官方网站对应页面" class="shop_bag">
-                            <svg class="icon icon_nomral" aria-hidden="true">
-                                <use xlink:href="#icon-bag"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-                <div class="container">
-                    <div class="search">
-                        <div class="search_box">
-                            <div class="svg_box">
-                                <svg class="icon" aria-hidden="true">
-                                    <use xlink:href="#icon-ios-search"></use>
-                                </svg>
-                            </div>
-                            <label for="searchInput" id="searchLable">
-                                <input type="text" placeholder="搜索 apple.com" id="search">
-                            </label>
-                        </div>
-                        <label for="searchCancel" class="cancel">取消</label>
-                    </div>
-                    <div class="dividing_line"></div>
-                    <ul class="link_list">
-                        <li>
-                            <a href="https://www.apple.com/cn/mac/" title="这个链接将跳转至apple(中国大陆)-官方网站对应页面">Mac</a>
-                        </li>
-                        <li>
-                            <a href="https://www.apple.com/cn/ipad/" title="这个链接将跳转至apple(中国大陆)-官方网站对应页面">iPad</a>
-                        </li>
-                        <li>
-                            <a href="https://www.apple.com/cn/iphone/" title="这个链接将跳转至apple(中国大陆)-官方网站对应页面">iPhone</a>
-                        </li>
-                        <li>
-                            <a href="https://www.apple.com/cn/watch/" title="这个链接将跳转至apple(中国大陆)-官方网站对应页面">Watch</a>
-                        </li>
-                        <li>
-                            <a href="https://www.apple.com/cn/music/" title="这个链接将跳转至apple(中国大陆)-官方网站对应页面">Music</a>
-                        </li>
-                        <li>
-                            <a href="https://support.apple.com/zh-cn" title="这个链接将跳转至apple(中国大陆)-官方网站对应页面">技术支持</a>
-                        </li>
-                    </ul>
-                    <div class="search_panel">
-                        <div class="fast_link">快速链接</div>
-                        <ul class="search_list">
-                            <li><a href="https://www.apple.com/cn/retail/"
-                                    title="这个链接将跳转至apple(中国大陆)-官方网站对应页面">查找零售店</a></li>
-                            <li><a href="https://www.apple.com/cn/today/" title="这个链接将跳转至apple(中国大陆)-官方网站对应页面">Today at
-                                    Apple</a></li>
-                            <li><a href="https://www.apple.com/cn/shop/accessories/all-accessories"
-                                    title="这个链接将跳转至apple(中国大陆)-官方网站对应页面">配件</a></li>
-                            <li><a href="https://www.apple.com/cn/airpods/"
-                                    title="这个链接将跳转至apple(中国大陆)-官方网站对应页面">AirPods</a></li>
-                            <li><a href="https://www.apple.com/cn/ipod-touch/"
-                                    title="这个链接将跳转至apple(中国大陆)-官方网站对应页面">iPod</a></li>
-                        </ul>
-                    </div>
+      <div class="nav">
+        <ul class="xs_hidden">
+          <li class="logo">
+            <a
+              href="https://www.apple.com/cn/"
+              title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+            >
+              <svg class="icon icon_nomral" aria-hidden="true">
+                <use xlink:href="#icon-IOS"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.apple.com/cn/mac/"
+              title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+            >
+              Mac
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.apple.com/cn/ipad/"
+              title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+            >
+              iPad
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.apple.com/cn/iphone/"
+              title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+            >
+              iPhone
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.apple.com/cn/watch/"
+              title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+            >
+              Watch
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.apple.com/cn/music/"
+              title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+            >
+              Music
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://support.apple.com/zh-cn"
+              title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+            >
+              技术支持
+            </a>
+          </li>
+          <li
+            class="logo"
+            title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+          >
+            <a href="#">
+              <svg class="icon icon_nomral" aria-hidden="true">
+                <use xlink:href="#icon-ios-search"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="logo">
+            <a
+              href="#"
+              title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+            >
+              <svg class="icon icon_nomral" aria-hidden="true">
+                <use xlink:href="#icon-bag"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <input type="radio" id="checkboxMenu" name="menu" />
+        <input type="radio" id="checkboxClosed" name="menu" />
+        <input type="radio" id="searchInput" name="search" />
+        <input type="radio" id="searchCancel" name="search" />
+        <div class="sm_hidden">
+          <ul class="mobileNav">
+            <li class="logo">
+              <label for="checkboxMenu">
+                <svg class="icon icon_nomral" aria-hidden="true" id="menu">
+                  <use xlink:href="#icon-ios-menu"></use>
+                </svg>
+              </label>
+              <label for="checkboxClosed">
+                <svg class="icon icon_nomral" aria-hidden="true" id="closed">
+                  <use xlink:href="#icon-closed"></use>
+                </svg>
+              </label>
+            </li>
+            <li class="logo">
+              <a
+                href="https://www.apple.com/cn/"
+                title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+              >
+                <svg class="icon icon_nomral" aria-hidden="true">
+                  <use xlink:href="#icon-IOS"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="logo">
+              <a
+                href="#"
+                title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+                class="shop_bag"
+              >
+                <svg class="icon icon_nomral" aria-hidden="true">
+                  <use xlink:href="#icon-bag"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="container">
+            <div class="search">
+              <div class="search_box">
+                <div class="svg_box">
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-ios-search"></use>
+                  </svg>
                 </div>
+                <label for="searchInput" id="searchLable">
+                  <input type="text" placeholder="搜索 apple.com" id="search" />
+                </label>
+              </div>
+              <label for="searchCancel" class="cancel">取消</label>
             </div>
-
+            <div class="dividing_line"></div>
+            <ul class="link_list">
+              <li>
+                <a
+                  href="https://www.apple.com/cn/mac/"
+                  title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+                  >Mac</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.apple.com/cn/ipad/"
+                  title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+                  >iPad</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.apple.com/cn/iphone/"
+                  title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+                  >iPhone</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.apple.com/cn/watch/"
+                  title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+                  >Watch</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.apple.com/cn/music/"
+                  title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+                  >Music</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://support.apple.com/zh-cn"
+                  title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+                  >技术支持</a
+                >
+              </li>
+            </ul>
+            <div class="search_panel">
+              <div class="fast_link">快速链接</div>
+              <ul class="search_list">
+                <li>
+                  <a
+                    href="https://www.apple.com/cn/retail/"
+                    title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+                    >查找零售店</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.apple.com/cn/today/"
+                    title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+                    >Today at Apple</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.apple.com/cn/shop/accessories/all-accessories"
+                    title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+                    >配件</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.apple.com/cn/airpods/"
+                    title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+                    >AirPods</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.apple.com/cn/ipod-touch/"
+                    title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+                    >iPod</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <div class="center">
-        <div class="conten">
-            <ul>
-                <li class="fs_li">
-                    <h2>
-                        折抵换购 &nbsp;<span>iPhone&nbsp;X<span class="sm_letter">R</span></span>
-                        仅&nbsp;RMB&nbsp;176/月&nbsp;起,&nbsp;或&nbsp;RMB&nbsp;4229&nbsp;起*。
-                    </h2>
-                    <h3>
-                        两种方式，让你轻松折抵换购新 iPhone：直接在线操作，或者在 Apple Store 零售店办理。
-                    </h3>
-                    <div class="buy_link">
-                        <a href="#">购买&nbsp;
-                            <svg class="icon">
-                                <use xlink:href="#icon-jiantou-right"></use>
-                            </svg>
-                        </a>
-                        <a href="#">进一步了解&nbsp;<svg class="icon">
-                                <use xlink:href="#icon-jiantou-right"></use>
-                            </svg></a>
-                    </div>
-                </li>
-                <li class="sec_li shop_title">
-                    <h2>iPhone X&nbsp;<span class="border_letter"><span>R</span></span></h2>
-                    <h3>全面屏设计，iPhone 上最强的电池续航，出类拔萃的性能，<br>以及影棚质感的照片效果。</h3>
-                    <div class="buy_link">
-                        <a href="#">进一步了解&nbsp;
-                            <svg class="icon">
-                                <use xlink:href="#icon-jiantou-right"></use>
-                            </svg>
-                        </a>
-                        <a href="#">购买&nbsp;<svg class="icon">
-                                <use xlink:href="#icon-jiantou-right"></use>
-                            </svg></a>
-                    </div>
-                    <div class="bg_img">
-                    </div>
-                </li>
-                <li class="th_li shop_title">
-                    <h2>iPhone X&nbsp;<span class="border_letter"><span>S</span></span></h2>
-                    <h3>iPhone 上最大的超视网膜显示屏，性能出类拔萃的 A12 仿生，安全性更进一步的面容 ID，以及支持景深控制的突破性双镜头系统。</h3>
-                    <div class="buy_link">
-                        <a href="#">进一步了解&nbsp;
-                            <svg class="icon">
-                                <use xlink:href="#icon-jiantou-right"></use>
-                            </svg>
-                        </a>
-                        <a href="#">购买&nbsp;<svg class="icon">
-                                <use xlink:href="#icon-jiantou-right"></use>
-                            </svg></a>
-                    </div>
-                    <div class="bg_img">
-                    </div>
-                </li>
-                <li class="fou_li shop_title">
-                    <h2>Mac Pro</h2>
-                    <h3>以实力刷新一切</h3>
-                    <div class="buy_link">
-                        <a href="#">进一步了解&nbsp;
-                            <svg class="icon">
-                                <use xlink:href="#icon-jiantou-right"></use>
-                            </svg>
-                        </a>
-                        <a href="#">通知我&nbsp;<svg class="icon">
-                                <use xlink:href="#icon-jiantou-right"></use>
-                            </svg></a>
-                    </div>
-                    <div class="bg_img">
-                        
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <ul class="shop_list_sm">
-            <li class="list_img_sm">
-                <a href="#">
-                    <h3 style="color: #fff">iOS13</h3>
-                    <h4 style="color: #fff">新出风格，新出世界</h4>
-                    <a href="#" class="view">查看预览&nbsp;<svg class="icon">
-                            <use xlink:href="#icon-jiantou-right"></use>
-                        </svg>
-                    </a>
-                </a>
-            </li>
-            <li class="list_img_sm">
-                <a href="#">
-                    <h3>iPadOS</h3>
-                    <h4>一个名字，就说明了一切</h4>
-                    <a href="#" class="view">查看预览&nbsp;<svg class="icon">
-                            <use xlink:href="#icon-jiantou-right"></use>
-                        </svg>
-                    </a>
-                </a>
-            </li>
-            <li class="list_img_sm">
-                <a href="#">
-                    <h3>macOS <span style="font-weight:100;font-style: normal;font-size:38px;">Catalina</span></h3>
-                    <h4>Mac&nbsp;的本领，突飞猛进。</h4>
-                    <a href="#" class="view">查看预览&nbsp;<svg class="icon">
-                            <use xlink:href="#icon-jiantou-right"></use>
-                        </svg>
-                    </a>
-                </a>
-            </li>
-            <li class="list_img_sm">
-                <a href="#">
-                    <h3>watchOS 6</h3>
-                    <h4>更知你心，更合你意。</h4>
-                    <a href="#" class="view">查看预览&nbsp;<svg class="icon">
-                            <use xlink:href="#icon-jiantou-right"></use>
-                        </svg>
-                    </a>
-                </a>
-            </li>
-            <li class="list_img_sm">
-                <a href="#">
-                    <h3>Pro Display XDR</h3>
-                    <h4>征服双眼，震撼人心。</h4>
-                    <div class="buy_link">
-                        <a href="#">进一步了解&nbsp;
-                            <svg class="icon">
-                                <use xlink:href="#icon-jiantou-right"></use>
-                            </svg>
-                        </a>
-                        <a href="#">通知我&nbsp;<svg class="icon">
-                                <use xlink:href="#icon-jiantou-right"></use>
-                            </svg></a>
-                    </div>
-                </a>
-            </li>
-            <li class="list_img_sm">
-                <a href="#">
-                    <h3 style="color: #fff ;display: inline;"><svg class="icon" style="font-size: 38px;">
-                            <use xlink:href="#icon-IOS"></use>
-                        </svg>WWDC19</h3>
-                    <h4 style="color: #fff">精彩发布一次看全。</h4>
-                    <a href="#" class="view" style="color: #fff">观看主题演讲&nbsp;<svg class="icon">
-                            <use xlink:href="#icon-jiantou-right"></use>
-                        </svg>
-                    </a>
-                </a>
-            </li>
+      <div class="conten">
+        <ul>
+          <li class="fs_li">
+              <h2>
+                折抵换购 &nbsp;<span
+                  >iPhone&nbsp;X<span class="sm_letter">R</span></span
+                >
+                仅&nbsp;RMB&nbsp;176/月&nbsp;起,&nbsp;或&nbsp;RMB&nbsp;4229&nbsp;起*。
+              </h2>
+              <h3>
+                两种方式，让你轻松折抵换购新 iPhone：直接在线操作，或者在 Apple
+                Store 零售店办理。
+              </h3>
+            <div class="buy_link">
+              <a href="https://www.apple.com/cn/shop/goto/buy_iphone/iphone_xr"
+              title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+                >购买&nbsp;
+                <svg class="icon">
+                  <use xlink:href="#icon-jiantou-right"></use>
+                </svg>
+              </a>
+              <a href="https://www.apple.com/cn/shop/goto/trade_in"
+              title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+                >进一步了解&nbsp;<svg class="icon">
+                  <use xlink:href="#icon-jiantou-right"></use></svg></a>
+            </div>
+          </li>
+          <li class="sec_li shop_title">
+            <a href="https://www.apple.com/cn/iphone-xr/" title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面">
+              <h2>
+                iPhone X&nbsp;<span class="border_letter"><span>R</span></span>
+              </h2>
+              <h3>
+                全面屏设计，iPhone 上最强的电池续航，出类拔萃的性能，<br />以及影棚质感的照片效果。
+              </h3>
+            </a>
+            <div class="buy_link">
+              <a href="https://www.apple.com/cn/iphone-xr/"
+              title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+                >进一步了解&nbsp;
+                <svg class="icon">
+                  <use xlink:href="#icon-jiantou-right"></use>
+                </svg>
+              </a>
+              <a href="https://www.apple.com/cn/shop/goto/buy_iphone/iphone_xr"
+              title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+                >购买&nbsp;<svg class="icon">
+                  <use xlink:href="#icon-jiantou-right"></use></svg></a>
+            </div>
+            <div class="bg_img"></div>
+          </li>
+          <li class="th_li shop_title">
+            <a href="https://www.apple.com/cn/iphone-xs/" title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面">
+              <h2>
+                iPhone X&nbsp;<span class="border_letter"><span>S</span></span>
+              </h2>
+              <h3>
+                iPhone 上最大的超视网膜显示屏，性能出类拔萃的 A12
+                仿生，安全性更进一步的面容
+                ID，以及支持景深控制的突破性双镜头系统。
+              </h3>
+            </a>
+            <div class="buy_link">
+              <a href="https://www.apple.com/cn/iphone-xs/" title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+                >进一步了解&nbsp;
+                <svg class="icon">
+                  <use xlink:href="#icon-jiantou-right"></use>
+                </svg>
+              </a>
+              <a href="https://www.apple.com/cn/shop/goto/buy_iphone/iphone_xs" title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+                >购买&nbsp;<svg class="icon">
+                  <use xlink:href="#icon-jiantou-right"></use></svg></a>
+            </div>
+            <div class="bg_img"></div>
+          </li>
+          <li class="fou_li shop_title">
+            <a href="https://www.apple.com/cn/mac-pro/" title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面">
+              <h2>Mac Pro</h2>
+              <h3>以实力刷新一切</h3>
+            </a>
+            <div class="buy_link">
+              <a href="https://www.apple.com/cn/mac-pro/" title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+                >进一步了解&nbsp;
+                <svg class="icon">
+                  <use xlink:href="#icon-jiantou-right"></use>
+                </svg>
+              </a>
+              <a href="https://www.apple.com/cn/mac-pro/#modal" title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+                >通知我&nbsp;<svg class="icon">
+                  <use xlink:href="#icon-jiantou-right"></use></svg></a>
+            </div>
+            <div class="bg_img"></div>
+          </li>
         </ul>
+      </div>
+      <ul class="shop_list_sm">
+        <li class="list_img_sm">
+          <a href="https://www.apple.com/cn/ios/ios-13-preview/" title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面">
+            <h3 style="color: #fff">iOS13</h3>
+            <h4 style="color: #fff">新出风格，新出世界</h4>
+            <a href="https://www.apple.com/cn/ios/ios-13-preview/" title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面" class="view"
+              >查看预览&nbsp;<svg class="icon">
+                <use xlink:href="#icon-jiantou-right"></use>
+              </svg>
+            </a>
+          </a>
+        </li>
+        <li class="list_img_sm">
+          <a href="https://www.apple.com/cn/ipados/ipados-preview/" title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面">
+            <h3>iPadOS</h3>
+            <h4>一个名字，就说明了一切</h4>
+            <a href="https://www.apple.com/cn/ipados/ipados-preview/" title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面" class="view"
+              >查看预览&nbsp;<svg class="icon">
+                <use xlink:href="#icon-jiantou-right"></use>
+              </svg>
+            </a>
+          </a>
+        </li>
+        <li class="list_img_sm">
+          <a href="https://www.apple.com/cn/macos/catalina-preview/" title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面">
+            <h3>
+              macOS
+              <span style="font-weight:100;font-style: normal;font-size:38px;"
+                >Catalina</span
+              >
+            </h3>
+            <h4>Mac&nbsp;的本领，突飞猛进。</h4>
+            <a href="https://www.apple.com/cn/macos/catalina-preview/" title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面" class="view"
+              >查看预览&nbsp;<svg class="icon">
+                <use xlink:href="#icon-jiantou-right"></use>
+              </svg>
+            </a>
+          </a>
+        </li>
+        <li class="list_img_sm">
+          <a href="https://www.apple.com/cn/watchos/watchos-preview/" title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面">
+            <h3>watchOS 6</h3>
+            <h4>更知你心，更合你意。</h4>
+            <a href="https://www.apple.com/cn/watchos/watchos-preview/" title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面" class="view"
+              >查看预览&nbsp;<svg class="icon">
+                <use xlink:href="#icon-jiantou-right"></use>
+              </svg>
+            </a>
+          </a>
+        </li>
+        <li class="list_img_sm">
+          <a href="https://www.apple.com/cn/pro-display-xdr/" title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面">
+            <h3>Pro Display XDR</h3>
+            <h4>征服双眼，震撼人心。</h4>
+            <div class="buy_link">
+              <a href="https://www.apple.com/cn/pro-display-xdr/specs/" title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+                >进一步了解&nbsp;
+                <svg class="icon">
+                  <use xlink:href="#icon-jiantou-right"></use>
+                </svg>
+              </a>
+              <a href="https://www.apple.com/cn/pro-display-xdr/#section-notify" title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面"
+                >通知我&nbsp;<svg class="icon">
+                  <use xlink:href="#icon-jiantou-right"></use></svg></a>
+            </div>
+          </a>
+        </li>
+        <li class="list_img_sm">
+          <a href="https://www.apple.com/cn/apple-events/" title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面">
+            <h3 style="color: #fff ;display: inline;">
+              <svg class="icon" style="font-size: 38px;">
+                <use xlink:href="#icon-IOS"></use></svg>WWDC19
+            </h3>
+            <h4 style="color: #fff">精彩发布一次看全。</h4>
+            <a href="https://www.apple.com/cn/apple-events/june-2019/" title="此页面所以链接都会跳转至Apple（中国大陆）- 官方网站对应页面" class="view" style="color: #fff"
+              >观看主题演讲&nbsp;<svg class="icon">
+                <use xlink:href="#icon-jiantou-right"></use>
+              </svg>
+            </a>
+          </a>
+        </li>
+      </ul>
     </div>
     <div class="footer">
-        <div class="foot_note">
-            * 所示的 iPhone X<span class="foot_sm_letter">R</span>
-            64GB 机型价格是使用 iPhone 7 Plus 32GB 机型进行折抵换购的价格。
-            上述所示机型的分期付款金额是在使用 iPhone 7 Plus 32GB 机型进行折抵后，再以招商银行、中国工商银行或花呗 24 期免息分期付款方式估算得出的整数金额 (未显示小数点以后的金额)，实际支付金额以银行或花呗账单为准。本优惠活动暂定截止日期为 2019 年 6 月 30 日，可能视情况延长。
-            折抵金额仅可在限定时间内使用，并且要求用于购买新 iPhone，以限制条款为准。
-            实际折抵金额取决于设备的状况、配置、制造年份，以及发售国家或地区。银行或花呗可能要求你的可用信用额度大于所购买产品的总金额，才能使用分期付款服务。有关信用卡或花呗分期服务的申请及使用问题，请与银行或花呗联系，Apple 对此不做任何承诺和保证。Apple 的折抵换购活动为 Apple 与 Apple 折抵服务合作伙伴共同推出，年满 18 周岁及以上者才能享受此项折抵换购服务。店内折抵换购需出示政府颁发并附有照片的有效身份证件 (当地法律可能会要求存储该信息)。可能需要遵守 Apple 或 Apple 折抵服务合作伙伴的其他条款。
-            本优惠不能与 Apple 的其他优惠或折扣活动同时使用。如需了解更多免息分期付款信息，请点击<a href="https://www.apple.com/cn/shop/browse/finance/installment">此处</a>
+        <input type="radio" name = "list_button1" id="list_button1_1">
+        <input type="radio" name = "list_button1" id="list_button1_2">
+        <input type="radio" name = "list_button2" id="list_button2_1">
+        <input type="radio" name = "list_button2" id="list_button2_2">
+        <input type="radio" name = "list_button3" id="list_button3_1">
+        <input type="radio" name = "list_button3" id="list_button3_2">
+        <input type="radio" name = "list_button4" id="list_button4_1">
+        <input type="radio" name = "list_button4" id="list_button4_2">
+        <input type="radio" name = "list_button5" id="list_button5_1">
+        <input type="radio" name = "list_button5" id="list_button5_2">
+        <input type="radio" name = "list_button6" id="list_button6_1">
+        <input type="radio" name = "list_button6" id="list_button6_2">
+        <input type="radio" name = "list_button7" id="list_button7_1">
+        <input type="radio" name = "list_button7" id="list_button7_2">
+      <div class="foot_note">
+        * 所示的 iPhone X<span class="foot_sm_letter">R</span> 64GB
+        机型价格是使用 iPhone 7 Plus 32GB 机型进行折抵换购的价格。
+        上述所示机型的分期付款金额是在使用 iPhone 7 Plus 32GB
+        机型进行折抵后，再以招商银行、中国工商银行或花呗 24
+        期免息分期付款方式估算得出的整数金额
+        (未显示小数点以后的金额)，实际支付金额以银行或花呗账单为准。本优惠活动暂定截止日期为
+        2019 年 6 月 30 日，可能视情况延长。
+        折抵金额仅可在限定时间内使用，并且要求用于购买新
+        iPhone，以限制条款为准。
+        实际折抵金额取决于设备的状况、配置、制造年份，以及发售国家或地区。银行或花呗可能要求你的可用信用额度大于所购买产品的总金额，才能使用分期付款服务。有关信用卡或花呗分期服务的申请及使用问题，请与银行或花呗联系，Apple
+        对此不做任何承诺和保证。Apple 的折抵换购活动为 Apple 与 Apple
+        折抵服务合作伙伴共同推出，年满 18
+        周岁及以上者才能享受此项折抵换购服务。店内折抵换购需出示政府颁发并附有照片的有效身份证件
+        (当地法律可能会要求存储该信息)。可能需要遵守 Apple 或 Apple
+        折抵服务合作伙伴的其他条款。 本优惠不能与 Apple
+        的其他优惠或折扣活动同时使用。如需了解更多免息分期付款信息，请点击<a
+          href="https://www.apple.com/cn/shop/browse/finance/installment"
+          >此处</a
+        >
+      </div>
+      <div class="foot_nav">
+        <div class="list_box">
+          <ul class="info_list">
+            <li>
+              <label for="list_button1_1">+</label>
+              <label for="list_button1_2">-</label>
+              <h3>
+                选购及了解
+              </h3>
+            </li>
+            <li class="">
+              <a class="" href="https://www.apple.com/cn/mac/">Mac</a>
+            </li>
+            <li class="">
+              <a class="" href="https://www.apple.com/cn/ipad/">iPad</a>
+            </li>
+            <li class="">
+              <a class="" href="https://www.apple.com/cn/iphone/">iPhone</a>
+            </li>
+            <li class="">
+              <a class="" href="https://www.apple.com/cn/watch/">Watch</a>
+            </li>
+            <li class="">
+              <a class="" href="https://www.apple.com/cn/music/">Music</a>
+            </li>
+            <li class="">
+              <a class="" href="https://www.apple.com/cn/itunes/">iTunes</a>
+            </li>
+            <li class="">
+              <a class="" href="https://www.apple.com/cn/homepod/">HomePod</a>
+            </li>
+            <li class="">
+              <a class="" href="https://www.apple.com/cn/ipod-touch/"
+                >iPod touch</a
+              >
+            </li>
+            <li class="">
+              <a
+                class=""
+                href="https://www.apple.com/cn/shop/goto/buy_accessories"
+                >配件</a
+              >
+            </li>
+            <li class="">
+              <a class="" href="https://www.apple.com/cn/shop/goto/giftcards"
+                >App Store 充值卡</a
+              >
+            </li>
+          </ul>
         </div>
-        <div class="foot_nav">
-            <div class="list_box">
+        <div class="list_box">
+          <ul class="info_list">
+            <li>
+              <label for="list_button2_1">+</label>
+              <label for="list_button2_2">-</label>
+              <h3>
+                Apple Store 商店
+              </h3>
+            </li>
+            <li class="">
+              <a class="" href="https://www.apple.com/cn/retail/">查找零售店</a>
+            </li>
+            <li class="">
+              <a class="" href="https://www.apple.com/cn/retail/geniusbar/"
+                >Genius Bar 天才吧</a
+              >
+            </li>
+            <li class="">
+              <a class="" href="https://www.apple.com/cn/today/"
+                >Today at Apple</a
+              >
+            </li>
+            <li class="">
+              <a class="" href="https://www.apple.com/cn/today/camp/"
+                >Apple 夏令营</a
+              >
+            </li>
+            <li class="">
+              <a class="" href="https://www.apple.com/cn/retail/fieldtrip/"
+                >Field Trip 课外活动</a
+              >
+            </li>
+            <li class="">
+              <a class="" href="https://itunes.apple.com/cn/app/apple-store"
+                >Apple Store App</a
+              >
+            </li>
+            <li class="">
+              <a
+                class=""
+                href="https://www.apple.com/cn/shop/goto/special_deals"
+                >翻新和优惠</a
+              >
+            </li>
+            <li class="">
+              <a class="" href="https://www.apple.com/cn/shop/goto/ww/financing"
+                >分期付款</a
+              >
+            </li>
+            <li class="">
+              <a class="" href="https://www.apple.com/cn/shop/goto/trade_in"
+                >Apple&nbsp;Trade&nbsp;In 换购计划</a
+              >
+            </li>
+            <li class="">
+              <a class="" href="https://www.apple.com/cn/shop/goto/order/list"
+                >订单状态</a
+              >
+            </li>
+            <li class="">
+              <a class="" href="https://www.apple.com/cn/shop/goto/help"
+                >选购帮助</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="list_box nesting">
+          <div>
+            <ul class="info_list">
+              <li>
                 
-                <ul class="info_list">
-                    <li>
-                            <h3>
-                                    选购及了解
-                                </h3>
-                    </li>
-                    <li class=""><a class="" href="https://www.apple.com/cn/mac/">Mac</a></li>
-                    <li class=""><a class="" href="https://www.apple.com/cn/ipad/">iPad</a></li>
-                    <li class=""><a class="" href="https://www.apple.com/cn/iphone/">iPhone</a></li>
-                    <li class=""><a class="" href="https://www.apple.com/cn/watch/">Watch</a></li>
-                    <li class=""><a class="" href="https://www.apple.com/cn/music/">Music</a></li>
-                    <li class=""><a class="" href="https://www.apple.com/cn/itunes/">iTunes</a></li>
-                    <li class=""><a class="" href="https://www.apple.com/cn/homepod/">HomePod</a></li>
-                    <li class=""><a class="" href="https://www.apple.com/cn/ipod-touch/">iPod touch</a></li>
-                    <li class=""><a class="" href="https://www.apple.com/cn/shop/goto/buy_accessories">配件</a></li>
-                    <li class=""><a class="" href="https://www.apple.com/cn/shop/goto/giftcards">App Store 充值卡</a></li>
-                </ul>
-            </div>
-            <div class="list_box">
-                  
-                    <ul class="info_list">
-                        <li>
-                                <h3>
-                                        Apple Store 商店
-                                    </h3>
-                        </li>
-                            <li class=""><a class="" href="https://www.apple.com/cn/retail/">查找零售店</a></li>
-                            <li class=""><a class="" href="https://www.apple.com/cn/retail/geniusbar/">Genius Bar 天才吧</a></li>
-                            <li class=""><a class="" href="https://www.apple.com/cn/today/">Today at Apple</a></li>
-                            <li class=""><a class="" href="https://www.apple.com/cn/today/camp/">Apple 夏令营</a></li>
-                            <li class=""><a class="" href="https://www.apple.com/cn/retail/fieldtrip/">Field Trip 课外活动</a></li>
-                            <li class=""><a class="" href="https://itunes.apple.com/cn/app/apple-store">Apple Store App</a></li>
-                            <li class=""><a class="" href="https://www.apple.com/cn/shop/goto/special_deals">翻新和优惠</a></li>
-                            <li class=""><a class="" href="https://www.apple.com/cn/shop/goto/ww/financing">分期付款</a></li>
-                            <li class=""><a class="" href="https://www.apple.com/cn/shop/goto/trade_in">Apple&nbsp;Trade&nbsp;In 换购计划</a></li>
-                            <li class=""><a class="" href="https://www.apple.com/cn/shop/goto/order/list">订单状态</a></li>
-                            <li class=""><a class="" href="https://www.apple.com/cn/shop/goto/help">选购帮助</a></li>
-                        </ul>
-            </div>
-            <div class="list_box nesting">
-                   <div>
-                       
-                    <ul class="info_list">
-                           <li>
-                                <h3>
-                                        教育应用
-                                    </h3>
-                           </li>
-                        <li><a href="#">apple 与教育</a></li>
-                        <li><a href="#">高校师生选购</a></li>
-                    </ul>
-                   </div>
-                   <div >
-                      
-                       <ul class="info_list margin_top">
-                           <li>
-                                <h3>
-                                        商务应用
-                                    </h3>
-                           </li>
-                           <li><a href="#">apple 与商务</a></li>
-                           <li><a href="#">商务选购</a></li>
-                       </ul>
-                   </div>
-            </div>
-            <div class="list_box nesting">
-                    <div>
-                        
-                     <ul class="info_list">
-                            <li>
-                                 <h3>
-                                         账户
-                                     </h3>
-                            </li>
-                         <li><a href="#">管理你的 Apple ID</a></li>
-                         <li><a href="#">Apple Store 账户</a></li>
-                         <li><a href="#">iCloud.com</a></li>
-                     </ul>
-                    </div>
-                    <div >
-                       
-                        <ul class="info_list margin_top">
-                            <li>
-                                 <h3>
-                                         Apple 价值观
-                                     </h3>
-                            </li>
-                            <li><a href="#">辅助功能</a></li>
-                            <li><a href="#">环境责任</a></li>
-                            <li><a href="#">隐私</a></li>
-                            <li><a href="#">供应商责任</a></li>
-                        </ul>
-                    </div>
-             </div>
-             <div class="list_box">
-                  
-                    <ul class="info_list">
-                        <li>
-                                <h3>
-                                        关于 Apple
-                                    </h3>
-                        </li>
-                        <li class=""><a class="" href="https://www.apple.com/cn/newsroom/">Newsroom</a></li>
-                        <li class=""><a class="" href="https://www.apple.com/cn/leadership/">Apple 管理层</a></li>
-                        <li class=""><a class="" href="https://www.apple.com/jobs/cn/">工作机会</a></li>
-                        <li class=""><a class="" href="https://www.apple.com/cn/job-creation/">创造就业</a></li>
-                        <li class=""><a class="" href="https://www.apple.com/cn/apple-events/">活动</a></li>
-                        <li class=""><a class="" href="https://www.apple.com/cn/contact/">联系 Apple</a></li>
-                        </ul>
-            </div>
+                <label for="list_button3_1">+</label>
+              <label for="list_button3_2">-</label>
+              <h3>
+                教育应用
+              </h3>
+              </li>
+              <li><a href="https://www.apple.com/cn/education/">apple 与教育</a></li>
+              <li><a href="https://www.apple.com/cn/shop/goto/educationrouting">高校师生选购</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="info_list margin_top">
+              <li>
+                
+                <label for="list_button4_1">+</label>
+              <label for="list_button4_2">-</label>
+              <h3>
+                商务应用
+              </h3>
+              </li>
+              <li><a href="https://www.apple.com/cn/business/">apple 与商务</a></li>
+              <li><a href="https://www.apple.com/cn/retail/business/">商务选购</a></li>
+            </ul>
+          </div>
         </div>
+        <div class="list_box nesting">
+          <div>
+            <ul class="info_list">
+              <li>
+                
+                <label for="list_button5_1">+</label>
+              <label for="list_button5_2">-</label>
+              <h3>
+                账户
+              </h3>
+              </li>
+              <li><a href="https://appleid.apple.com/cn/">管理你的 Apple ID</a></li>
+              <li><a href="https://www.apple.com/cn/shop/goto/account">Apple Store 账户</a></li>
+              <li><a href="https://www.icloud.com">iCloud.com</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="info_list margin_top">
+              <li>
+                
+                <label for="list_button6_1">+</label>
+              <label for="list_button6_2">-</label>
+              <h3>
+                Apple 价值观
+              </h3>
+              </li>
+              <li><a href="https://www.apple.com/cn/accessibility/">辅助功能</a></li>
+              <li><a href="https://www.apple.com/cn/environment/">环境责任</a></li>
+              <li><a href="https://www.apple.com/cn/privacy/">隐私</a></li>
+              <li><a href="https://www.apple.com/cn/supplier-responsibility/">供应商责任</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="list_box">
+          <ul class="info_list">
+            <li>
+              
+              <label for="list_button7_1">+</label>
+              <label for="list_button7_2">-</label>
+              <h3>
+                关于 Apple
+              </h3>
+            </li>
+            <li class="">
+              <a class="" href="https://www.apple.com/cn/newsroom/">Newsroom</a>
+            </li>
+            <li class="">
+              <a class="" href="https://www.apple.com/cn/leadership/"
+                >Apple 管理层</a
+              >
+            </li>
+            <li class="">
+              <a class="" href="https://www.apple.com/jobs/cn/">工作机会</a>
+            </li>
+            <li class="">
+              <a class="" href="https://www.apple.com/cn/job-creation/"
+                >创造就业</a
+              >
+            </li>
+            <li class="">
+              <a class="" href="https://www.apple.com/cn/apple-events/">活动</a>
+            </li>
+            <li class="">
+              <a class="" href="https://www.apple.com/cn/contact/"
+                >联系 Apple</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot_shop" x-ms-format-detection="none">
+        更多选购方式：<a href="https://www.apple.com/cn/retail/">查找你附近的 Apple Store 零售店</a>及<a href="https://locate.apple.com/cn/zh/">更多门店</a>，<span class="nowrap">或者致电 400-666-8800。</span>
+      </div>
+      <div class="footer_legal">
+        <div class="footer_legal_copyright">Copyright ©
+          
+          2019
+          Apple Inc. 保留所有权利。</div>
+        <div class="footer_legal_links">
+          <a class="footer_legal_link" href="https://www.apple.com/cn/privacy/privacy-policy/">隐私政策</a>
+          <a class="footer_legal_link" href="https://www.apple.com/cn/legal/terms/site.html">使用条款</a>
+          <a class="footer_legal_link" href="https://www.apple.com/cn/shop/goto/help/sales_refunds">销售政策</a>
+          <a class="footer_legal_link" href="https://www.apple.com/cn/legal/">法律信息</a>
+          <a class="footer_legal_link" href="https://www.apple.com/cn/sitemap/">网站地图</a>
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

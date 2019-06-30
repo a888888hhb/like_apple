@@ -171,3 +171,12 @@
   max-width: 80vw;
 
 }
+
+
+.foot_nav .info_list label{
+  display: none;
+}
+.foot_shop,
+.footer_legal{
+  padding-left: 10vw;
+}
