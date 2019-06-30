@@ -442,6 +442,7 @@
   padding: 1vh 0 1vh 2vw;
 }
 .list_box .info_list li:first-child{
+  max-width: 100vw;
   padding-left: 0;
   display: flex !important;
   flex-direction: row-reverse;
